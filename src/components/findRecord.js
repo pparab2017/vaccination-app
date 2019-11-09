@@ -36,10 +36,24 @@ handleNewUser() {
                     <br></br>
 
                     <TextField
-                        id="txt_passport"
-                        label="Passport:"
+                        id="txt_name"
+                        label="Name:"
                         style={{ margin: 8 }}
-                        placeholder="Enter passport number"
+                        placeholder="Enter Full Name"
+                        style={{ width: "400px" }}
+                        margin="normal"
+                        //value={this.state.mothersName}
+                        InputLabelProps={{
+                            shrink: true,
+                        }} 
+                        //onChange={this.change.bind(this)}
+                    />
+                    <br/>
+                    <TextField
+                        id="txt_dob"
+                        label="Birth Identification Number:"
+                        style={{ margin: 8 }}
+                        placeholder="Enter Identifier Number"
                         style={{ width: "400px" }}
                         margin="normal"
                         //value={this.state.mothersName}

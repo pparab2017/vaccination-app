@@ -86,8 +86,9 @@ class SubmitVac extends React.Component {
         arr.push(this.state.pName);
         arr.push(this.state.bc);
         arr.push(this.state.vacText);
-        arr.push(this.state.ssn);
-        arr.push(this.state.dob);
+       const d = new Date();
+        arr.push(d.getTime() +""); // date
+        
         toPost.peers = ["id-us/peer0"];
         toPost.fcn = "register";
         toPost.args = arr;
